@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>Hans</name>
+    <weight>75</weight>
+    <hobbies>
+        <hobby>kitting</hobby>
+        <hobby>running</hobby>
+        <hobby>flying</hobby>
+    </hobbies>
+</person>

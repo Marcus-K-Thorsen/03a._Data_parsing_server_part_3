@@ -1,0 +1,3 @@
+name=Hans
+weight=75
+hobbies=: kitting, running, flying
