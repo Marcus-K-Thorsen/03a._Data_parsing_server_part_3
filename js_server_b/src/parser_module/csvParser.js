@@ -35,7 +35,7 @@ const parseCsv = () => {
             entry[header] = value;
             personData[header] = value;
         });
-        return entry;
+        return new Person(entry.name, entry.weight, entry.hobbies, "csv");
     });
 
     //return data;
