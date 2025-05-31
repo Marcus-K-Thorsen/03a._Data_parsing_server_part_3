@@ -17,19 +17,8 @@ const parseXml = () => {
         attributeNamePrefix: '',
     });
     const parsedPersonData = parser.parse(xmlText).person;
-    const personData = {};
 
-    Object.entries(parsedPersonData).forEach(([key, value]) => {
-        if (key === 'hobbies') {
-            personData[key] = value.hobby.map(item => item.trim());
-        } else if (typeof value === 'string' && !isNaN(value)) {
-            personData[key] = parseFloat(value);
-        } else {
-            personData[key] = value;
-        }
-    });
-
-    return new Person(personData.name, personData.weight, personData.hobbies, "xml");
+    return new Person(parsedPersonData.name, parsedPersonData.weight, parsedPersonData.hobbies.hobby, "xml");
 };
 
 export default parseXml;
